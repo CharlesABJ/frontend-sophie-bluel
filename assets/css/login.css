@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1140px;
+    min-width: 360px;
+    margin: auto;
+    font-family: 'Work Sans';
+    font-size: 14px;
+    padding: 0 0 2rem;
+}
+
+
+/* ----------------------HEADER-ON<--------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 120px;
+    padding: 0 2rem;
+}
+
+header .logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo h1 a {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Syne';
+    font-size: 22px;
+    font-weight: 800;
+    color: #B1663C
+}
+
+header .logo h1 span {
+    font-family: 'Work Sans';
+    font-size: 10px;
+    letter-spacing: 0.1em;
+}
+
+header .logo .bubble-nav {
+    font-size: 16px;
+    background: #B1663C;
+    color: #ffffff;
+    padding: 8px 9.5px;
+    border-radius: 50%;
+    border: #ffffff solid 1px;
+    cursor: pointer;
+    display: none;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header nav ul li a:hover {
+    color: #B1663C;
+}
+
+
+header nav ul li i {
+    font-size: 20px;
+}
+header nav ul li i {
+    font-size: 20px;
+}
+
+
+header nav ul li .active {
+    font-weight: bold;
+}
+
+header nav ul li .active:hover {
+    color: #2b2b2b;
+}
+
+
+
+/* >==================== HEADER OFF ====================> */
+
+
+/* <==================== MAIN ON ====================< */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+
+main h2 {
+    font-family: 'Syne';
+    font-size: 30px;
+    color: #1D6154;
+    padding-bottom: 20px;
+}
+
+main .error-connect {
+    color: #ff1e00;
+    font-weight: bold;
+    padding: 40px 0 30px;
+}
+
+
+main form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+}
+
+main form label {
+    margin: 2em 0 1em 0;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+main form input {
+    height: 50px;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 3px;
+    padding: 0 10px;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+    outline-color: #e5a580;
+}
+
+main form .password-zone {
+    position: relative;
+    width: 100%;
+}
+
+main form .password-zone .eyes{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translate(-50%, -50%);
+    color: #1D6154;
+}
+
+main form .password-zone .eye-open {
+    right: 7.3%;
+}
+
+main form .password-zone .hidden {
+    display: none;
+}
+
+main form button {
+    font-family: 'Syne';
+    font-weight: 700;
+    color: white;
+    background-color: #1D6154;
+    margin: 40px 0 25px;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+main form a {
+    color: #000000;
+    transition: 0.3s all;
+}
+
+main form a:hover {
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+
+/* >==================== MAIN OFF ====================> */
+
+
+/* <==================== FOOTER ON ====================< */
+footer {
+    padding: 0 2rem;
+}
+
+footer nav {
+    margin: 80px 0 0;
+    text-align: end;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: lighter;
+}
+
+footer nav a:hover {
+    color: #B1663C;
+}
+
+
+/* >==================== FOOTER OF ====================> */
+
+/* Class pour JS */
+
+.input-success{
+    outline-color:green;
+}
+
+.input-error{
+    outline-color:red;
+}
+
+
+/* <==================== RESPONSIVE ON ====================< */
+
+
+@media screen and (max-width: 739px) {
+
+    main form {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 605px) {
+
+    header {
+        margin-bottom: 30px;
+        align-items: baseline;
+        flex-direction: column;
+        margin-top: 0;
+        padding-top: 30px;
+    }
+
+    header.background-responsive {
+        background: #B1663C;
+    }
+
+    header .logo {
+        position: relative;
+        z-index: 1;
+    }
+
+    header .logo .bubble-nav {
+        display: block;
+    }
+
+    header nav {
+        width: 100%;
+        padding-top: 50px;
+        text-align: center;
+        display: none;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        width: 100%;
+        height: calc(100vh - 65px);
+        justify-content: space-around;
+
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    header nav ul li a:hover {
+        color: #1D6154;
+    }
+
+    main h2 {
+        font-size: 25px;
+        padding: 40px 0 0;
+    }
+
+    main input,
+    main textarea {
+        font-size: 12px;
+    }
+}
