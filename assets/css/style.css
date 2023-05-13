@@ -783,8 +783,9 @@ footer nav a:hover {
     #portfolio .gallery .gallery-grid {
         grid-gap: 30px;
         grid-template-columns: 1fr 1fr;
-        margin: 60px 20px;
+        margin: 0px 20px 60px;
         padding: 50px;
+        width: 100%;
     }
 
     #portfolio .gallery .gallery-grid figure img {
