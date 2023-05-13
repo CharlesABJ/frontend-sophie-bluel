@@ -817,6 +817,10 @@ footer nav a:hover {
         padding: 0;
     }
 
+    #portfolio .gallery .gallery-grid figure img {
+        max-height: 200px;
+    }
+
     #contact {
         width: 95%;
     }
@@ -937,10 +941,6 @@ footer nav a:hover {
         width: 45%;
         font-size: 8px;
         height: 30px;
-    }
-
-    #portfolio .gallery .gallery-grid figure img {
-        max-height: 100px;
     }
 
     #portfolio .gallery .gallery-grid figure figcaption {
