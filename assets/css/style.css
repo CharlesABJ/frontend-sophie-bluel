@@ -84,7 +84,7 @@ header .logo h1 a {
     display: flex;
     flex-direction: column;
     font-family: 'Syne';
-    font-size: 22px;
+    font-size: 2.5vw;
     font-weight: 800;
     color: #B1663C
 }
@@ -127,16 +127,25 @@ header nav ul li {
 header nav ul li a {
     text-decoration: none;
     color: #000000;
+    transition: 0.3s all;
 }
 
 header nav ul li a:hover {
     color: #B1663C;
+    transition: 0.3s all;
 }
 
 
-header nav ul li a i {
-    font-size: 20px;
+header nav ul li i {
+    font-size: 25px;
 }
+
+
+header nav ul li i:hover {
+    color: #B1663C;
+    transition: 0.3s all;
+}
+
 
 
 /* ----------------------HEADER-OFF>--------------------------- */
@@ -194,7 +203,7 @@ main {
 #introduction article p {
     margin: 0 0 20px;
     display: flex;
-    word-break: break-all;
+    text-align: justify;
 }
 
 
@@ -725,11 +734,33 @@ footer nav a:hover {
 
 /* ----------------------RESPONSIVE-ON<--------------------------- */
 @media screen and (max-width: 991px) {
+    #introduction figure {
+        width: 80%;
+        height: 100%;
+    }
+
+    #introduction figure .img-portrait {
+        width: 100%;
+    }
+
+    #introduction article {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.6vw;
+
+    }
+
     #introduction article h2 {
         flex-direction: row-reverse;
-        margin: 50px 0 20px;
+        margin: 20px 0 0px;
         align-items: center;
         justify-content: center;
+    }
+
+    #introduction article h2 .title {
+        font-size: 4.5vw;
     }
 
     #introduction article h2 .modal-trigger {
